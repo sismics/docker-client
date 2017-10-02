@@ -1,8 +1,16 @@
 # Changelog
 
-## 8.9.1
+## 8.9.2
 
 Not yet released.
+
+- Ensure `ContainerConfig.exposedPorts` and `ContainerConfig.volumes` are serialized as maps of keys to empty map placeholders. This is a change to `exposedPorts`, which had been serialized as keys -> `null`; this is not a change to the serialization of `volumes` but is a code refactor. [893][]
+
+[893]: https://github.com/spotify/docker-client/issues/893
+
+## 8.9.1
+
+Released September 26, 2017.
 
 - Support creating a service without specifying a name ([891][] Allow `ServiceSpec.name` to be nullable)
 - Change `TaskStatus.timestamp` from `String` to `Date` ([895][])
