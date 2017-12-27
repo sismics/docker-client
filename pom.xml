@@ -8,7 +8,7 @@
   </parent>
 
   <artifactId>docker-client</artifactId>
-  <version>8.10.1-SNAPSHOT</version>
+  <version>8.10.1-2-sismics</version>
   <packaging>jar</packaging>
   <name>docker-client</name>
   <description>A docker client</description>
@@ -28,6 +28,14 @@
     <url>https://github.com/spotify/docker-client</url>
     <tag>HEAD</tag>
   </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>sismics</id>
+      <name>Sismics</name>
+      <url>https://nexus.sismics.com/repository/maven-releases/</url>
+    </repository>
+  </distributionManagement>
 
   <developers>
     <developer>
